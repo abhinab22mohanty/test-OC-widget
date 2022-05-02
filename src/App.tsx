@@ -20,17 +20,19 @@ function App() {
 
       const liveChatWidgetProps = {
         styleProps: {
-            generalStyles: {
-              width: "400px",
-              height: "600px",
-              bottom: "30px",
-              right: "30px"
+          generalStyles: {
+            width: "360px",
+            height: "560px",
+            bottom: "20px",
+            right: "20px"
           }
         },
-        headerProps: {
-            controlProps: {
-                hideMinimizeButton: true
+        chatButtonProps: {
+          styleProps: {
+            generalStyleProps: {
+              position: "absolute"
             }
+          }
         },
         chatSDK: chatSDK, // mandatory
         chatConfig: chatConfig // mandatory
